@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Roboto-cn';
+    src: url('./../font/Roboto-Condensed.ttf');
+}
+
+:root {
+    /* Colors */
+    --colors-blue: #175898;
+    --colors-sky: #0DA1F7;
+    --colors-pink: #FFCEC6;
+    --colors-green: #9BD093;
+    --colors-sky2: #CEE9FF;
+    --colors-yellow: #FFE187;
+    --colors-dark: #2E133A;
+}
+
+
+/*  */
+
+html {
+    height: 100%;
+}
+
+.container {
+    background-color: #cee9ff80;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.9;
+    z-index: -2;
+    top: 0;
+}
+
+body {
+    /* background: rgb(255, 206, 198);
+    background: -moz-linear-gradient(342deg, rgba(255, 206, 198, 1) 0%, rgba(206, 233, 255, 1) 100%);
+    background: -webkit-linear-gradient(342deg, rgba(255, 206, 198, 1) 0%, rgba(206, 233, 255, 1) 100%);
+    background: linear-gradient(342deg, rgba(255, 206, 198, 1) 0%, rgba(206, 233, 255, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffcec6", endColorstr="#cee9ff", GradientType=1); */
+    background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+    background-size: cover;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    grid-template-rows: repeat( 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 510px;
+    height: 300px;
+    margin: auto;
+    margin-top: 180px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+svg {
+    bottom: 0;
+    position: absolute;
+}
+
+div.div1 img {
+    width: 200px;
+    height: 200px;
+    margin-right: -50px;
+}
+
+div.div2 label {
+    font-family: Roboto-cn;
+    font-size: 8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--colors-dark);
+}
+
+.div1,
+.div2,
+.div3 {
+    align-items: center;
+    text-align: center;
+    margin: auto 0;
+}
+
+
+/* From uiverse.io by @satyamchaudharydev */
+
+button {
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--colors-sky2);
+    padding: 1em 4.5em;
+    background: var(--colors-blue);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    -webkit-transition: 0.2s background;
+    -moz-transition: 0.2s background;
+    -ms-transition: 0.2s background;
+    -o-transition: 0.2s background;
+    margin: auto;
+    font-family: 'Roboto-cn';
+}
+
+button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--colors-blue);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--colors-sky2);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+button:hover {
+    background-color: var(--colors-sky);
+    cursor: pointer;
+}
+
+button:hover .arrow {
+    background: var(--colors-sky2);
+}
+
+button:hover .arrow:before {
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}

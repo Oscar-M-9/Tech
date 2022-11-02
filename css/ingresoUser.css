@@ -1,0 +1,131 @@
+:root {
+    /* Colors */
+    --colors-blue: #175898;
+    --colors-sky: #0DA1F7;
+    --colors-pink: #FFCEC6;
+    --colors-green: #9BD093;
+    --colors-sky2: #CEE9FF;
+    --colors-yellow: #FFE187;
+    --colors-dark: #2E133A;
+}
+
+.body-user {
+    background-color: var(--colors-sky2);
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-style {
+    border-radius: 20px;
+    width: 429px;
+    height: 495px;
+    background-color: var(--colors-blue);
+    box-shadow: 0px 12px 18px 0px black;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+label {
+    display: flex;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background: #50D28A;
+    cursor: pointer;
+    margin: 20px auto;
+    border-radius: 40px;
+    margin-top: -39px;
+    margin-right: 157px;
+}
+
+.file {
+    display: none;
+}
+
+.simboloMas {
+    height: 27px;
+    width: auto;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.imageUser {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.text-title {
+    color: white;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: 6px;
+    margin-bottom: -12px;
+}
+
+.text-style {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.input-style {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 49px;
+    width: 277px;
+    border-radius: 25px;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #F2D228;
+    text-align: center;
+    font-size: 32px;
+    border: none;
+    margin-top: -7px;
+    outline-color: rgba(255, 255, 255, 0.562);
+}
+
+.buttonAceptar-style {
+    background-color: rgba(243, 84, 53, 1);
+    border-color: rgba(243, 84, 53, 1);
+    height: 46px;
+    width: 189px;
+    border-radius: 70px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btnOnOffTwo {
+    display: flex;
+    float: right;
+    height: 80px;
+    width: 80px;
+    margin-top: 8px;
+    border-radius: 100px;
+    box-shadow: 5px 10px 20px #000000;
+    background-image: linear-gradient(160deg, #FFE53B 0%, #FF2525 94%);
+    cursor: pointer;
+    border-color: rgba(213, 155, 9, 2);
+}
+
+.iconPlay-two {
+    /* background-image: url("./img/play.svg");*/
+    width: 60%;
+    align-items: center;
+    margin-top: 22px;
+    margin-left: 12px;
+}
