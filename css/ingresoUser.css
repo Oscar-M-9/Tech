@@ -10,7 +10,7 @@
 }
 
 .body-user {
-    background-color: var(--colors-sky2);
+    background: url("../img/fondoUser.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -25,7 +25,8 @@
     border-radius: 20px;
     width: 429px;
     height: 495px;
-    background-color: var(--colors-blue);
+    background-color: #2E133A;
+    background-image: linear-gradient(160deg, #2E133A 0%, #0DA1F7 94%);
     box-shadow: 0px 12px 18px 0px black;
     text-align: center;
     -webkit-border-radius: 20px;
@@ -39,7 +40,7 @@ label {
     position: relative;
     height: 40px;
     width: 40px;
-    background: #50D28A;
+    background: #0DA1F7;
     cursor: pointer;
     margin: 20px auto;
     border-radius: 40px;
@@ -82,12 +83,12 @@ label {
 }
 
 .input-style {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(217, 217, 217, 0.3);
     height: 49px;
     width: 277px;
     border-radius: 25px;
     border-color: rgba(255, 255, 255, 0.3);
-    color: #F2D228;
+    color: #175898;
     text-align: center;
     font-size: 32px;
     border: none;
@@ -96,17 +97,23 @@ label {
 }
 
 .buttonAceptar-style {
-    background-color: rgba(243, 84, 53, 1);
-    border-color: rgba(243, 84, 53, 1);
+    background-color: #FFDF88;
+    border-color: #0DA1F7;
     height: 46px;
     width: 189px;
     border-radius: 70px;
-    color: white;
+    color: black;
     font-size: 26px;
     font-weight: bold;
     font-family: sans-serif;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.buttonAceptar-style:hover {
+    background-color: #2E133A;
+    border-color: #2E133A;
+    color: white;
 }
 
 .btnOnOffTwo {

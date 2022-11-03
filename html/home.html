@@ -1,192 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="../css/normalize.css">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-    <link rel="shortcut icon" href="../img/logo2.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.0/journal/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Tech</title>
-    <style>
-        .avatar {
-            min-width: 50px;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .imageUser {
-            width: 40px;
-            height: 40px;
-            margin: 5px;
-            border-radius: 50%;
-        }
-        
-        .bvnuser {
-            margin-top: 10px;
-            margin-left: 10px;
-            color: #fff;
-        }
-        
-        .sv {
-            margin: 40px;
-        }
-        
-        .card {
-            background-color: #FFCDC648;
-            box-shadow: 0px 2px 6px #000;
-        }
-        
-        .cant {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-        
-        .ct {
-            width: 100px;
-        }
-        
-        .separator {
-            width: 20px;
-        }
-    </style>
+    <title>+ Tech</title>
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+    <script defer src="../js/data.js"></script>
+    <script defer src="../js/modal.js"></script>
+    <script defer src="../js/home.js"></script>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <div class="avatar">
-            <div>
-                <img class="imageUser" id="imageUser" src="../img/avatar.png" />
-            </div>
-            <div class="bvnuser">
-                <label for="">Hola : Fulanito</label>
-            </div>
-
-        </div>
-        <ul class="nav justify-content-end ">
-            <li class="nav-item">
-                <li class="nav-item">
-                    <span class="badge rounded-pill bg-primary">0</span>
-                </li>
-                <a class="nav-link active" aria-current="page" href="list.html">
-                    <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M19.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 4h17l-2 11H7L5 4zm0 0c-.167-.667-1-2-3-2M20 15H5.23c-1.784 0-2.73.781-2.73 2 0 1.219.946 2 2.73 2H19.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-            </li>
-
-        </ul>
-    </div>
-</nav>
-<div class="sv">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://realplaza.vtexassets.com/arquivos/ids/16502762-800-auto?v=637540366718200000&width=800&height=auto&aspect=true" class="card-img-top img-p" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" id="producto1">Audífono Bluetooth Inalámbrico Gato STN-28L</h5>
-                    <p class="card-text" id="precio1">
-                        S/59.00
-                    </p>
-                </div>
-                <div class="card-footer cant">
-                    <button type="button" class="btn btn-success"> <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M19.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 4h17l-2 11H7L5 4zm0 0c-.167-.667-1-2-3-2M20 15H5.23c-1.784 0-2.73.781-2.73 2 0 1.219.946 2 2.73 2H19.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  Añadir</button>
-                    <div class="separator"></div>
-                    <input type="number" class="btn btn-light ct" id="cantidad1" value="1">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://realplaza.vtexassets.com/arquivos/ids/17741823-800-auto?v=637725933982630000&width=800&height=auto&aspect=true" class="card-img-top img-p" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" id="producto2">Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</h5>
-                    <p class="card-text" id="precio2">
-                        S/1,548.00
-                    </p>
-                </div>
-                <div class="card-footer cant">
-                    <button type="button" class="btn btn-success"> <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M19.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 4h17l-2 11H7L5 4zm0 0c-.167-.667-1-2-3-2M20 15H5.23c-1.784 0-2.73.781-2.73 2 0 1.219.946 2 2.73 2H19.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  Añadir</button>
-                    <div class="separator"></div>
-                    <input type="number" class="btn btn-light ct" id="cantidad2" value="1">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://realplaza.vtexassets.com/arquivos/ids/22968386-800-auto?v=637877137188970000&width=800&height=auto&aspect=true" class="card-img-top img-p" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" id="producto3">Parlante Avatec Para Pc Computadora Laptop Luces Rgb CSP-2037B</h5>
-                    <p class="card-text" id="precio3">
-                        S/75.00
-                    </p>
-                </div>
-                <div class="card-footer cant">
-                    <button type="button" class="btn btn-success"> <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M19.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 4h17l-2 11H7L5 4zm0 0c-.167-.667-1-2-3-2M20 15H5.23c-1.784 0-2.73.781-2.73 2 0 1.219.946 2 2.73 2H19.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  Añadir</button>
-                    <div class="separator"></div>
-                    <input type="number" class="btn btn-light ct" id="cantidad3" value="1">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://realplaza.vtexassets.com/arquivos/ids/21712213-800-auto?v=637829627747130000&width=800&height=auto&aspect=true" class="card-img-top img-p" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" id="producto4">Sound Tower EV2001</h5>
-                    <p class="card-text" id="precio4">
-                        S/299.00
-                    </p>
-                </div>
-                <div class="card-footer cant">
-                    <button type="button" class="btn btn-success"> <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M19.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 4h17l-2 11H7L5 4zm0 0c-.167-.667-1-2-3-2M20 15H5.23c-1.784 0-2.73.781-2.73 2 0 1.219.946 2 2.73 2H19.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  Añadir</button>
-                    <div class="separator"></div>
-                    <input type="number" class="btn btn-light ct" id="cantidad4" value="1">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://realplaza.vtexassets.com/arquivos/ids/16116659-800-auto?v=637498864727300000&width=800&height=auto&aspect=true" class="card-img-top img-p" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" id="producto5">Audífonos Bluetooth F9 5-C TWS Power Bank 2000 mAh</h5>
-                    <p class="card-text" id="precio5">
-                        S/49.90
-                    </p>
-                </div>
-                <div class="card-footer cant">
-                    <button type="button" class="btn btn-success"> <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M19.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 4h17l-2 11H7L5 4zm0 0c-.167-.667-1-2-3-2M20 15H5.23c-1.784 0-2.73.781-2.73 2 0 1.219.946 2 2.73 2H19.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  Añadir</button>
-                    <div class="separator"></div>
-                    <input type="number" class="btn btn-light ct" id="cantidad5" value="1">
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="https://realplaza.vtexassets.com/arquivos/ids/29670891-800-auto?v=637950860097530000&width=800&height=auto&aspect=true" class="card-img-top img-p" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title" id="producto6">Parlante Inalámbrico AMAZON Echo Dot 4 Azul</h5>
-                    <p class="card-text" id="precio6">
-                        S/259.00
-                    </p>
-                </div>
-                <div class="card-footer cant">
-                    <button type="button" class="btn btn-success"> <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#FFFFFF"><path d="M19.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM9.5 22a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 4h17l-2 11H7L5 4zm0 0c-.167-.667-1-2-3-2M20 15H5.23c-1.784 0-2.73.781-2.73 2 0 1.219.946 2 2.73 2H19.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  Añadir</button>
-                    <div class="separator"></div>
-                    <input type="number" class="btn btn-light ct" id="cantidad6" value="1">
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
 
 <body>
+    <!---- <header>
+        <h1 id="titulo" class="titulo">After Eventos</h1>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </header>--->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+    <header>
+        <ul class="container">
+            <li><img class="imageUser" id="imageAvatar" src="../img/avatar.png" />
+            </li>
+            <li>Usuario(a):
+                <input id="ingreTexto2" class="input-jugador"></input>
+            </li>
+            <li> <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span
+                        id="contadorCarrito">0</span></button></li>
+        </ul>
+    </header>
+
+    <!-- <select id="filtroTalle">
+        <option value="all">Todos</option>
+        <option value="L">Large</option>
+        <option value="M">Medium</option>
+        <option value="S">Small</option>
+    </select>
+--->
+
+    <main id="contenedor-productos">
+
+    </main>
+
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        swal("¡BIENVENID@!", "A +Tech", "success")
+            .then((value) => {
+                document.getElementById("ingreTexto2").value = localStorage.getItem("user");
+                //////////
+                let image = document.getElementById("imageAvatar");
+                image.src = localStorage.getItem("imageUser");
+            });
+    </script>
 </body>
 
 </html>
