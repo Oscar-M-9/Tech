@@ -13,6 +13,9 @@
     <script defer src="../js/data.js"></script>
     <script defer src="../js/modal.js"></script>
     <script defer src="../js/home.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../toasts/vanillatoasts.css">
 </head>
 
 <body>
@@ -29,8 +32,7 @@
             <li>Usuario(a):
                 <input id="ingreTexto2" class="input-jugador" disabled>
             </li>
-            <li> <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span
-                        id="contadorCarrito">0</span></button></li>
+            <li> <button id="boton-carrito"><i class="fas fa-shopping-cart"><span id="contadorCarrito">0</span></i></button></li>
         </ul>
     </header>
 
@@ -41,11 +43,15 @@
         <option value="S">Small</option>
     </select>
 --->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div id="contenedor-productos" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- <main id="contenedor-productos">
 
-    <main id="contenedor-productos">
-
-    </main>
-
+            </main> -->
+            </div>
+        </div>
+    </section>
     <div class="modal-contenedor">
         <div class="modal-carrito">
             <h3>Carrito</h3>
@@ -62,6 +68,8 @@
         </div>
     </div>
 
+
+
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         swal("¡BIENVENID@!", "A +Tech", "success")
@@ -72,6 +80,9 @@
                 image.src = localStorage.getItem("imageUser");
             });
     </script>
+    <script src="../toasts/vanillatoasts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
