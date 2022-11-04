@@ -32,7 +32,15 @@
             <li>Usuario(a):
                 <input id="ingreTexto2" class="input-jugador" disabled>
             </li>
-            <li> <button id="boton-carrito"><i class="fas fa-shopping-cart"><span id="contadorCarrito">0</span></i></button></li>
+            <li> <button id="boton-carrito">
+                    <i class="fas fa-shopping-cart">
+                        <span id="contadorCarrito">0
+                        </span>
+                    </i>
+
+                </button>
+
+            </li>
         </ul>
     </header>
 
@@ -45,7 +53,8 @@
 --->
     <section class="py-2">
         <div class="container px-4 px-lg-2 mt-5">
-            <div id="contenedor-productos" class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+            <div id="contenedor-productos"
+                class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
                 <!-- <main id="contenedor-productos">
 
             </main> -->
@@ -63,8 +72,12 @@
                     <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
                 </div> -->
             </div>
-            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            <p class="precioProducto">Precio total: S/. <span id="precioTotal">0</span></p>
+            <div id="botones">
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+                <button id="comprar-carrito" class="boton-comprar">Comprar</button>
+            </div>
+
         </div>
     </div>
 
