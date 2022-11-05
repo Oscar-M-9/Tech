@@ -12,100 +12,120 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.0/journal/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Tech</title>
-    <style>
-        .avatar {
-            min-width: 50px;
-            height: 50px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .imageUser {
-            width: 40px;
-            height: 40px;
-            margin: 5px;
-            border-radius: 50%;
-        }
-
-        .bvnuser {
-            margin-top: 10px;
-            margin-left: 10px;
-            color: #fff;
-        }
-
-        .tabla {
-            margin: 100px;
-        }
-
-        .table thead {
-            text-align: center;
-        }
-
-        .table thead tr th {
-            background-color: #FFE187;
-        }
-
-        .btn-process {
-            margin-left: 40%;
-            display: flex;
-        }
-
-        .separator {
-            width: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/lista.css">
+    <link rel="stylesheet" href="/css/spinner.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <div class="avatar">
-                <div>
-                    <img class="imageUser" id="imageUser" src="../img/avatar.png" />
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <h2 class="p-3 text-white">+Tech</h2>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="text-white" href="home.html">Volver</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="activaFuncion" class=" btn btn-secondary boton mt-2">Click</button>
+    <main>
+
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <form id="procesar-pago" method="POST">
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="cliente"
+                                    placeholder="Ingresa nombre cliente" name="persona">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" id="correo" class="form-control" name="email.id" id="email.id"
+                                    placeholder="Ingresa correo del Cliente">
+                            </div>
+                            <div class="tabla">
+                                <table
+                                    class="table table-ligth table-striped table-hover table-bordered table-sm table-responsive-sm"
+                                    id="lista-compra">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">Producto</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- <tr>
+                                            <th scope="row">Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</th>
+                                            <td>Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</td>
+                                            <td>1</td>
+                                            <td>S/. 1,548.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</th>
+                                            <td>Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</td>
+                                            <td>1</td>
+                                            <td>S/.1,548.00</td>
+                                        </tr> -->
+                                    </tbody>
+                                    <tr>
+                                        <th colspan="4" scope="col" class="text-right">TOTAL
+                                            <p id="totalProceso"></p>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="row justify-content-center d-none" id="spinner">
+                                <div class="spinner">
+                                    <div class="cube1"></div>
+                                    <div class="cube2"></div>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 mb-2">
+                                    <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <input type="submit" class="btn btn-success btn-block" id="button"
+                                        value="Finalizar compra">
+                                </div>
+                            </div>
+
+                    </form>
+
+
                 </div>
-                <div class="bvnuser">
-                    <label for="">Hola : Fulanito</label>
-                </div>
+
 
             </div>
+
         </div>
-    </nav>
 
-    <div class="tabla">
-        <table class="table table-ligth table-striped table-hover table-bordered table-sm table-responsive-sm">
-            <thead>
-                <tr>
-                    <th scope="col">Producto</th>
-                    <th scope="col">Descripción</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Subtotal</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</th>
-                    <td>Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</td>
-                    <td>1</td>
-                    <td>S/. 1,548.00</td>
-                </tr>
-                <tr>
-                    <th scope="row">Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</th>
-                    <td>Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</td>
-                    <td>1</td>
-                    <td>S/.1,548.00</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
 
-    <div class="btn-process">
+
+    </main>
+
+
+
+    <!-- <div class="btn-process">
         <a href="compra.html"><button type="button" class="btn btn-info" li>Pagar Productos</button></a>
         <div class="separator"></div>
         <a href="#"><button type="button" class="btn btn-info">Cancelar Orden</button></a>
-    </div>
+    </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="/js/home.js" type="module"></script>
+
 </body>
 
 </html>
