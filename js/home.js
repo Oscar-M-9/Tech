@@ -38,6 +38,7 @@ if (botonVaciar) {
 //PRIMER PRIMER PASO, INYECTAR EL HTML
 
 stockProductos.forEach((producto) => {
+
     const div = document.createElement('div');
     div.classList.add('producto');
     div.classList.add('col');
@@ -52,6 +53,7 @@ stockProductos.forEach((producto) => {
         <div class="card-body">
         <div class="text-center">
         <h3>${producto.nombre}</h3>
+        
         <p>${producto.desc}</p>
         <p class="precioProducto">Precio: S/. ${producto.precio}</p>
         </div>
@@ -71,7 +73,6 @@ stockProductos.forEach((producto) => {
     //Por cada elemento de mi array, creo un div, lo cuelgo, le pongo un id particular, una vez colgado
     //le hago un get element by id (el de agregar) Obtengo el elemento y a dicho elemento le agregamos
     //el add event listener
-
     boton.addEventListener('click', () => {
         //esta funcion ejecuta el agregar el carrito con la id del producto
         agregarAlCarrito(producto.id);
@@ -168,7 +169,7 @@ const actualizarCarrito = () => {
     //3 - TERCER PASO. AGREGAR AL MODAL. Recorremos sobre el array de carrito.
 
     //Por cada producto creamos un div con esta estructura y le hacemos un append al contenedorCarrito (el modal)
-    
+
     contenedorCarrito.innerHTML = "";
 
     localStorage.setItem('carrito', JSON.stringify(carrito))

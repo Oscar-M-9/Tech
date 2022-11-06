@@ -15,8 +15,6 @@
 }
 
 
-/*  */
-
 html {
     height: 100%;
 }
@@ -44,8 +42,8 @@ body {
 
 .parent {
     display: grid;
-    grid-template-columns: repeat( 1fr);
-    grid-template-rows: repeat( 1fr);
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 510px;
