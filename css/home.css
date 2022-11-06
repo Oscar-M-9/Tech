@@ -138,6 +138,7 @@ p {
 
 .precioProducto {
     font-weight: 700;
+    font-size: 20px;
 }
 
 .boton-agregar {
@@ -249,6 +250,12 @@ p {
 
 .productoEnCarrito:hover {
     border-left: 5px solid royalblue;
+}
+
+.productoEnCarrito .column {
+    width: 33.33%;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .boton-eliminar {
