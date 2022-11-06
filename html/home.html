@@ -32,8 +32,15 @@
             <li>Usuario(a):
                 <input id="ingreTexto2" class="input-jugador" disabled>
             </li>
-            <li> <button id="boton-carrito"><i class="fas fa-shopping-cart"><span
-                            id="contadorCarrito">0</span></i></button></li>
+            <li> <button id="boton-carrito">
+                    <i class="fas fa-shopping-cart">
+                        <span id="contadorCarrito">0
+                        </span>
+                    </i>
+
+                </button>
+
+            </li>
         </ul>
     </header>
 
@@ -44,10 +51,10 @@
         <option value="S">Small</option>
     </select>
 --->
-    <section class="py-5">
-        <div class="container px-4 px-lg-4 mt-5">
+    <section class="py-2">
+        <div class="container px-4 px-lg-2 mt-5">
             <div id="contenedor-productos"
-                class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
                 <!-- <main id="contenedor-productos">
 
             </main> -->
@@ -65,8 +72,34 @@
                     <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
                 </div> -->
             </div>
-            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            <p class="precioProducto">Precio total: S/. <span id="precioTotal">0</span></p>
+            <div id="botones">
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+                <button id="comprar-carrito" class="boton-comprar">Comprar</button>
+            </div>
+
+            <!-- <div class="tabla" id="productoEnCarrito">
+                <table class="table table-ligth table-striped table-hover table-bordered table-sm table-responsive-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</th>
+                            <td>Celular Samsung Galaxy A52S 5G 128GB 6GB RAM Negro</td>
+                            <td>1</td>
+                            <td>S/. 1,548.00</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div> -->
+
         </div>
     </div>
 
@@ -85,6 +118,7 @@
     <script src="../toasts/vanillatoasts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

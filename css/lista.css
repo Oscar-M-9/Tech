@@ -1,0 +1,67 @@
+.avatar {
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageUser {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.bvnuser {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+#activaFuncion {
+    opacity: 100;
+}
+
+.tabla {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.table thead {
+    text-align: center;
+}
+
+.table thead tr th {
+    padding: 10px;
+    background-color: #175898;
+    font-size: 18px;
+    color: white;
+}
+
+.table tbody tr {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.table tbody tr td {
+    text-align: center;
+}
+
+.btn-process {
+    margin-left: 40%;
+    display: flex;
+}
+
+.separator {
+    width: 50px;
+}
+
+.alerta {
+    font-weight: 800;
+}
+
+/* .text-right {
+    display: flex;
+    justify-content: space-between;
+
+} */
