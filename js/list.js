@@ -3,9 +3,7 @@ const totalProceso = document.querySelector('#totalProceso');
 
 document.addEventListener('DOMContentLoaded', procesarCarrito);
 
-if (form) {
-  form.addEventListener('submit', enviarPedido)
-}
+form.addEventListener('submit', enviarPedido);
 
 function procesarCarrito() {
   carrito.forEach((prod) => {
@@ -66,7 +64,7 @@ function enviarPedido(e) {
           }, 3000)
 
       }, 3000);
-
+      localStorage.setItem('carrito', []);
   }
 
 
