@@ -94,7 +94,7 @@ const agregarAlCarrito = (prodId) => {
 
     //PARA AUMENTAR LA CANTIDAD Y QUE NO SE REPITA
     const existe = carrito.some(prod => prod.id === prodId) //comprobar si el elemento ya existe en el carro
-
+    console.log("agregarCarrito")
     if (existe) { //SI YA ESTÁ EN EL CARRITO, ACTUALIZAMOS LA CANTIDAD
         const prod = carrito.map(prod => { //creamos un nuevo arreglo e iteramos sobre cada curso y cuando
             // map encuentre cual es el q igual al que está agregado, le suma la cantidad
@@ -137,7 +137,8 @@ const actualizarCarrito = () => {
     //3 - TERCER PASO. AGREGAR AL MODAL. Recorremos sobre el array de carrito.
 
     //Por cada producto creamos un div con esta estructura y le hacemos un append al contenedorCarrito (el modal)
-
+    
+    localStorage.setItem('carrito', JSON.stringify(carrito))
     carrito.forEach((prod) => {
         const div = document.createElement('div')
         div.className = ('productoEnCarrito')
@@ -150,7 +151,6 @@ const actualizarCarrito = () => {
         `
         contenedorCarrito.appendChild(div)
 
-        localStorage.setItem('carrito', JSON.stringify(carrito))
 
     })
     /* carrito.forEach((prod) => {
