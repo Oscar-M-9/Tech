@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     //need change 
     carrito = JSON.parse(localStorage.getItem('carrito'));
     actualizarCarrito();
-    document.querySelector('#activaFuncion').click(procesarCarrito);
 })
 
 
@@ -170,6 +169,8 @@ const actualizarCarrito = () => {
 
     //Por cada producto creamos un div con esta estructura y le hacemos un append al contenedorCarrito (el modal)
     
+    contenedorCarrito.innerHTML = "";
+
     localStorage.setItem('carrito', JSON.stringify(carrito))
     carrito.forEach((prod) => {
         const div = document.createElement('div')
