@@ -11,6 +11,7 @@ ul {
 }
 
 li {
+    list-style-type: none;
     margin-top: 10px;
     float: left;
     padding: 15px;
@@ -34,8 +35,8 @@ li {
 }
 
 .imageUser {
-    margin: 120px 5px 0px 120px;
-    margin-top: -25px;
+    margin: 120px 5px -10px 40px;
+    margin-top: -20px;
     border-radius: 50%;
     height: 75px;
     width: 75px;
@@ -74,13 +75,13 @@ h1 {
 }
 
 #boton-carrito {
-    margin: -15px 0px 0px 100px;
+    margin: -40px 0px 10px 100px;
     border: none;
     color: #FFDF88;
     font-size: 35px;
     background-color: transparent;
     border-radius: 50%;
-    padding: 10px 20px;
+    padding: 0px 30px;
     transition: all .3s;
 }
 

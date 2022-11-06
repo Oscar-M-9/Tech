@@ -18,12 +18,17 @@
 </head>
 
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <h2 class="p-3 text-white">+Tech</h2>
+        <nav class="navbar navbar-light bg-blue min-vw-100">
+            <h1 class="text-white">+ Tech</h1>
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+                <li class="nav-item">
                     <a class="text-white" href="home.html">Volver</a>
+                </li>
+                </a>
                 </li>
             </ul>
         </nav>
@@ -39,8 +44,7 @@
                         <div class="form-group row">
                             <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
                             <div class="col-12 col-md-10">
-                                <input type="text" class="form-control" id="cliente"
-                                    placeholder="Ingresa nombre cliente" name="persona">
+                                <input type="text" class="form-control" id="cliente" disabled name="cliente">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -90,25 +94,26 @@
                                 </div>
                             </div>
 
-                            <div class="row justify-content-between">
+                            <!--<div class="row justify-content-between">
                                 <div class="col-md-4 mb-2">
-                                    <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                                    <a href="../index.html" class="btn btn-info btn-block">Seguir comprando</a>
                                 </div>
-                                <div class="col-xs-12 col-md-4">
-                                    <input type="submit" class="btn btn-success btn-block" id="button"
-                                        value="Finalizar compra">
-                                </div>
+                            
+                            
+                                                        <div class="col-xs-12 col-md-4">
+                                <input type="submit" class="btn btn-success btn-block" id="button"
+                                    value="Finalizar compra">-->
+
+
+                            <div class="col-xs-12 col-md-4">
+                                <input type="submit" class="btn btn-success btn-block" id="button"
+                                    value="Finalizar compra">
                             </div>
 
-                    </form>
 
+                        </div>
 
                 </div>
-
-
-            </div>
-
-        </div>
 
 
 
@@ -126,6 +131,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
     <script src="/js/list.js" type="module"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('71lL99XSBTJv8EdsC')
+    </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <script>
+        document.getElementById("cliente").value = localStorage.getItem("user");
+    </script>
 </body>
 
 </html>

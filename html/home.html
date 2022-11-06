@@ -19,13 +19,7 @@
 </head>
 
 <body>
-    <!---- <header>
-        <h1 id="titulo" class="titulo">After Eventos</h1>
-        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
-    </header>--->
-
-
-    <header>
+    <!----    <header>
         <ul class="container">
             <li><img class="imageUser" id="imageAvatar" src="../img/avatar.png" />
             </li>
@@ -37,12 +31,37 @@
                         <span id="contadorCarrito">0
                         </span>
                     </i>
-
                 </button>
 
             </li>
         </ul>
+    </header>--->
+
+    <header>
+        <nav class="navbar navbar-light bg-blue min-vw-100">
+            <li><img class="imageUser" id="imageAvatar" src="../img/avatar.png" />
+                Usuario(a):
+                <input id="ingreTexto2" class="input-jugador" disabled>
+            </li>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#modal">
+
+                        <button id="boton-carrito">
+                            <i class="fas fa-shopping-cart">
+                                <span id="contadorCarrito">0
+                                </span>
+                            </i>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+        <div class="row mt-5" id="contenedor"></div>
+    </main>
 
     <!-- <select id="filtroTalle">
         <option value="all">Todos</option>
