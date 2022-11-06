@@ -24,6 +24,7 @@ buton_aceptar.addEventListener("click", capturaInfo)
 function capturaInfo() {
     let nameUser = document.getElementById("input-user").value
     localStorage.setItem("user", nameUser);
+    localStorage.setItem("carrito", []);
 }
 
 //boton de sonido
