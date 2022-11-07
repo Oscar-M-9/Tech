@@ -14,29 +14,13 @@
     --colors-dark: #2E133A;
 }
 
-
 html {
     height: 100%;
 }
 
-.container {
-    background-color: #cee9ff80;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    opacity: 0.9;
-    z-index: -2;
-    top: 0;
-}
-
 body {
-    /* background: rgb(255, 206, 198);
-    background: -moz-linear-gradient(342deg, rgba(255, 206, 198, 1) 0%, rgba(206, 233, 255, 1) 100%);
-    background: -webkit-linear-gradient(342deg, rgba(255, 206, 198, 1) 0%, rgba(206, 233, 255, 1) 100%);
-    background: linear-gradient(342deg, rgba(255, 206, 198, 1) 0%, rgba(206, 233, 255, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffcec6", endColorstr="#cee9ff", GradientType=1); */
     background-repeat: no-repeat;
-    background-image: url(https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80);
+    background-image: url(../img/casa-inteligente.webp);
     background-size: cover;
 }
 
@@ -47,9 +31,17 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 510px;
-    height: 300px;
+    min-height: 300px;
     margin: auto;
     margin-top: 180px;
+    background-color: rgba(255, 255, 255, 0.581);
+    padding: 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .div1 {
@@ -79,7 +71,7 @@ div.div2 label {
     font-family: Roboto-cn;
     font-size: 8em;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
     color: var(--colors-dark);
 }
